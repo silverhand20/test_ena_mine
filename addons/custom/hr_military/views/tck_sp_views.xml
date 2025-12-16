@@ -1,0 +1,41 @@
+<odoo>
+  <record id="tck_sp_tree_view" model="ir.ui.view">
+    <field name="name">tck.sp.tree</field>
+    <field name="model">tck.sp</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="code"/>
+        <field name="phone"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="tck_sp_form_view" model="ir.ui.view">
+    <field name="name">tck.sp.form</field>
+    <field name="model">tck.sp</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="code"/>
+            <field name="phone"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="tck_sp_action" model="ir.actions.act_window">
+    <field name="name">ТЦК та СП</field>
+    <field name="res_model">tck.sp</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <menuitem id="tck_sp_menu"
+            name="ТЦК та СП"
+            parent="hr.menu_hr_main"
+            action="tck_sp_action"
+            sequence="50"/>
+</odoo>
