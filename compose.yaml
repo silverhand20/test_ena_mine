@@ -9,7 +9,7 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons/custom:/mnt/custom-addons
-      - ./addons/oca:/mnt/oca-addons
+      - ./addons/oca/hr:/mnt/oca-addons
     environment:
       - HOST=db
       - USER=odoo
