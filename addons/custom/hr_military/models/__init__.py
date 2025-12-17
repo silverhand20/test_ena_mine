@@ -1,2 +1,2 @@
 from . import tck_sp
-from . import hr_empoyee
+from . import hr_employee
