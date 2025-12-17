@@ -1,0 +1,4 @@
+[submodule "addons/oca/hr"]
+	path = addons/oca/hr
+	url = https://github.com/OCA/hr.git
+	branch = 17.0
