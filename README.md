@@ -18,7 +18,7 @@ It is intended for quick local setup for development.
 - `compose.yaml` — Docker Compose file (Odoo + Postgres)
 - `config/odoo.conf` — Odoo configuration (`addons_path`, etc.)
 - `addons/custom/` — custom modules
-  - `addons/custom/hr_military/` — custom HR military records module
+  - `addons/custom/lekh_hr_military/` — custom HR military records module
 - `addons/oca/hr/` — **OCA/hr** add-ons (included as a git submodule)
 
 
@@ -55,12 +55,12 @@ docker compose logs -f web
 
 1. Go to **Apps**.
 2. Search and install:
-   - `hr_military`
+   - `lekh_hr_military`
    - or any OCA modules, e.g. `hr_employee_ppe`
 
 ---
 
-## Custom Module: `hr_military`
+## Custom Module: `lekh_hr_military`
 
 The module extends **HR → Employees** with “Military Records” fields such as:
 - Reserved status
