@@ -8,16 +8,16 @@ class TestHrMilitary(TransactionCase):
 
     def test_create_tck_sp(self):
         tck = self.env['tck.sp'].create({
-            'name': 'Kyiv TCK & SP',
-            'code': 'UA-001',
+            'name': 'Kyiv',
+            'code': '001',
             'phone': '+380000000000',
         })
         self.assertTrue(tck.id, 'TCK&SP record should be created')
-        self.assertEqual(tck.name, 'Kyiv TCK & SP')
-        self.assertEqual(tck.code, 'UA-001')
+        self.assertEqual(tck.name, 'Kyiv')
+        self.assertEqual(tck.code, '001')
 
     def test_employee_military_fields(self):
-        tck = self.env['tck.sp'].create({'name': 'Kyiv TCK & SP'})
+        tck = self.env['tck.sp'].create({'name': 'Kyiv'})
         employee = self.env['hr.employee'].create({
             'name': 'Test Employee',
             'is_reserved': True,

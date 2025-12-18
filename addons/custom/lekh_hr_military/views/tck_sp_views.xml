@@ -35,7 +35,7 @@
 
   <menuitem id="tck_sp_menu"
             name="ТЦК та СП"
-            parent="hr.menu_hr_configuration"
+            parent="hr.menu_human_resources_configuration"
             action="tck_sp_action"
             sequence="50"/>
 </odoo>
